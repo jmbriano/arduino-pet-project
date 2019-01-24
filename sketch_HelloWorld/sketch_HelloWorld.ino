@@ -3,6 +3,10 @@
 //#include <ArduinoJson.h>
 //#include <HttpClient.h>
 
+// IMPORTANT: in order for this sketch to work, the SSL certifiates must be installed in the board. To do so:
+//  1) Load into the board the Examples > WiFi101 > FirmwareUpdater example
+//  2) Go to Tools > WiFi101 Firmware Updater. And load the certificate for slack.com (make sure the Serial Console is not open otherwise it would not connect)
+
 WiFiClient client;
 
 char ssid[] = "XXXX";     //  your network SSID (name)
